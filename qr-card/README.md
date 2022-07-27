@@ -1,6 +1,6 @@
 # Frontend Mentor - QR Code Card Component
 
-This is a solution to the [PQR Code Card Component](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [QR Code Card Component](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ### The challenge
 

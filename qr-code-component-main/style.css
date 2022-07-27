@@ -1,0 +1,54 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--light-gray);
+}
+
+.qr-card {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qr-card__figure {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 25px;
+  width: 30rem;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.qr-card__figure:hover {
+  transform: translate(2px, -5px);
+  box-shadow: 0 10px 40px 0px rgba(0, 0, 0, 0.1);
+}
+
+.qr-card__image {
+  margin-bottom: 2rem;
+}
+
+.qr-card__image img {
+  border-radius: 10px;
+}
+
+.caption__CTA {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--dark-blue);
+  margin-bottom: 1.5rem;
+}
+
+.caption__instructions {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--grayish-blue);
+  margin-bottom: 1rem;
+}

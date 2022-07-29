@@ -31,3 +31,7 @@ The designs were created to the following widths:
 
 - Family: [Outfit](https://fonts.google.com/specimen/Outfit)
 - Weights: 300, 400, 600
+- <!--
+    Equilibrium #3429 Our Equilibrium collection promotes balance and calm.
+    0.041 ETH 3 days left Creation of Jules Wyvern
+    -->

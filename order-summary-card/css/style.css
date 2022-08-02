@@ -1,0 +1,135 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--pale-blue);
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.summary-card {
+  background-color: white;
+  width: 40rem;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px 0px rgba(0, 0, 0, 0.1);
+}
+
+.summary-card__image-container {
+  margin-bottom: 3rem;
+}
+
+.summary-card__text {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+  width: 30rem;
+  margin-bottom: 4rem;
+}
+
+.summary-card__header {
+  font-size: 2.6rem;
+  color: var(--dark-blue);
+  font-weight: 900;
+}
+
+.summary-card__description {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--desaturated-blue);
+  line-height: 2.4rem;
+}
+
+.summary-card__subscription-plan {
+  display: flex;
+  align-items: center;
+  background-color: var(--very-pale-blue);
+  padding: 2rem;
+  border-radius: 10px;
+  width: 35rem;
+}
+
+.subscription-plan__details {
+  margin-left: 2rem;
+}
+
+.subscription-plan__title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--dark-blue);
+  margin-bottom: 1rem;
+}
+
+.subscription-plan__price {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--desaturated-blue);
+}
+
+.subscription-plan__change {
+  margin-left: auto;
+}
+
+.subscription-plan__change a:link,
+.subscription-plan__change a:visited {
+  font-size: 1.6rem;
+  color: var(--bright-blue);
+}
+
+.subscription-plan__change a:hover,
+.subscription-plan__change a:active {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.summary-card__payment button {
+  width: 35rem;
+  text-align: center;
+  background-color: var(--bright-blue);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 20px 15px 0px rgba(85, 0, 255, 0.1);
+  transition: all 0.2s;
+}
+
+.summary-card__payment button:hover {
+  background-color: var(--dark-blue);
+}
+
+.summary-card__cancel button {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--desaturated-blue);
+  padding: 1rem;
+  transition: all 0.2s;
+}
+
+.summary-card__cancel button:hover {
+  color: var(--dark-blue);
+}

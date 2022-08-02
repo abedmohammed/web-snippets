@@ -8,10 +8,14 @@
   --shade-light: hsl(228, 12%, 48%);
 }
 
+html {
+  font-size: 100%;
+}
+
 body {
   background-color: var(--cream);
   font-size: 1.4rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .center {
@@ -47,11 +51,11 @@ body {
 }
 
 .product__name::before {
-  content: "perfume";
+  content: 'perfume';
   position: absolute;
   top: -2.2rem;
   font-size: 0.8rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: 5px;
   color: var(--shade-light);
   text-transform: uppercase;
@@ -59,7 +63,7 @@ body {
 
 .product__name {
   position: relative;
-  font-family: "Fraunces", serif;
+  font-family: 'Fraunces', serif;
   font-size: 2.4rem;
   line-height: 1;
   color: var(--shade-dark);
@@ -78,7 +82,7 @@ body {
 }
 
 .product__price--discount {
-  font-family: "Fraunces", serif;
+  font-family: 'Fraunces', serif;
   font-size: 2rem;
   color: var(--accent);
 }

@@ -1,0 +1,39 @@
+@media (max-width: 90em) {
+  html {
+    font-size: 8px;
+  }
+
+  .preview {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    width: 60rem;
+  }
+
+  .preview__title {
+    font-size: 3rem;
+  }
+
+  .preview__description {
+    font-size: 1.7rem;
+    margin-bottom: 5rem;
+  }
+
+  .preview__text {
+    max-width: 30rem;
+    text-align: center;
+    margin: 5rem auto;
+  }
+
+  .preview__stats {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .preview__img-container {
+    order: -1;
+  }
+}

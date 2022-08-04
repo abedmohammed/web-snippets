@@ -16,10 +16,13 @@
 }
 
 .preview {
+  margin: 0 10rem 0 10rem;
   background-color: var(--dark-desaturated-blue);
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 130rem;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .preview__text {
@@ -53,14 +56,14 @@
 }
 
 .stat__info-heading {
-  font-size: 2.4rem;
+  font-size: 3rem;
   color: var(--white);
   margin-bottom: 1rem;
 }
 
 .stat__info-title {
   font-family: 'Inter', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   color: var(--stat-transparent-white);

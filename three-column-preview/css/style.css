@@ -4,4 +4,87 @@
   --very-dark-cyan: hsl(179, 100%, 13%);
   --transprent-white: hsla(0, 0%, 100%, 0.75);
   --light-gray: hsl(0, 0%, 95%);
+
+  --cursive: 'Big Shoulders Display', cursive;
+  --sans-serif: 'Lexend Deca', sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-gray);
+}
+
+.column-cards {
+  display: flex;
+  margin: 10rem 20rem;
+}
+
+.card {
+  max-width: 32rem;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sedan {
+  background-color: var(--bright-orange);
+}
+.suvs {
+  background-color: var(--dark-cyan);
+}
+.luxury {
+  background-color: var(--very-dark-cyan);
+}
+
+.card__icon {
+  margin-bottom: 3rem;
+}
+
+.card__title {
+  font-family: var(--cursive);
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  color: var(--light-gray);
+  margin-bottom: 3rem;
+}
+
+.card__description {
+  font-family: var(--sans-serif);
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  color: var(--transprent-white);
+  margin-bottom: 8rem;
+}
+
+.card__button {
+  border: none;
+  background-color: var(--light-gray);
+
+  font-family: var(--sans-serif);
+  font-size: 1.5rem;
+  margin-top: auto;
+  padding: 1.2rem 3rem;
+  border-radius: 100rem;
+
+  cursor: pointer;
+}
+
+.sedan .card__button {
+  color: var(--bright-orange);
+}
+.suvs .card__button {
+  color: var(--dark-cyan);
+}
+.luxury .card__button {
+  color: var(--very-dark-cyan);
+}
+
+.card__button:hover {
+  background-color: transparent;
+  color: var(--light-gray);
+  box-shadow: inset 0 0 0 2px var(--light-gray);
 }

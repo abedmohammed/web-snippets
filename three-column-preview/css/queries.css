@@ -1,0 +1,11 @@
+@media (max-width: 72em) {
+  .container {
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .column-cards {
+    flex-direction: column;
+    margin: 10rem 3rem;
+  }
+}

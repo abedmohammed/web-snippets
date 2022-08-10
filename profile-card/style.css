@@ -5,6 +5,10 @@
   --dark-gray: hsl(0, 0%, 59%);
 }
 
+body {
+  background-color: var(--dark-cyan);
+}
+
 .container {
   height: 100%;
   background-color: var(--dark-cyan);

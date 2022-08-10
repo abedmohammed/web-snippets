@@ -7,9 +7,12 @@
   --grayish-blue: hsl(210, 46%, 95%);
 }
 
+body {
+  background-color: var(--grayish-blue);
+}
+
 .container {
   height: fit-content;
-  background-color: var(--grayish-blue);
   padding: 6rem 2rem;
   display: flex;
   justify-content: center;

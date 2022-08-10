@@ -9,8 +9,11 @@
   --sans-serif: 'Lexend Deca', sans-serif;
 }
 
+body {
+}
+
 .container {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;

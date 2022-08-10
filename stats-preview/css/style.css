@@ -7,8 +7,11 @@
   --stat-transparent-white: hsla(0, 0%, 100%, 0.6);
 }
 
-.container {
+body {
   background-color: var(--very-dark-blue);
+}
+
+.container {
   min-height: 100%;
   display: flex;
   justify-content: center;

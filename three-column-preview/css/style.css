@@ -10,6 +10,7 @@
 }
 
 body {
+  background-color: var(--light-gray);
 }
 
 .container {
@@ -17,7 +18,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--light-gray);
 }
 
 .column-cards {

@@ -1,0 +1,52 @@
+@media (min-width: 37em) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .container {
+    height: fit-content;
+  }
+
+  .daniel {
+    grid-column: 1/3;
+  }
+
+  .kira {
+    grid-column: 2;
+    grid-row: 2 / 4;
+  }
+
+  .patrick {
+    grid-row: 4;
+    grid-column: 1/3;
+  }
+}
+
+@media (min-width: 82em) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .container {
+    height: 100%;
+    align-items: center;
+  }
+
+  .testimonials {
+    width: 150rem;
+  }
+
+  .daniel {
+    grid-column: 1/3;
+  }
+
+  .kira {
+    grid-column: 4;
+    grid-row: 1 / 3;
+  }
+
+  .patrick {
+    grid-column: 2 / 4;
+    grid-row: 2;
+  }
+}

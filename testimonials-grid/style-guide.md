@@ -36,3 +36,4 @@ Note for text colors:
 
 - Family: [Barlow Semi Condensed](https://fonts.google.com/specimen/Barlow+Semi+Condensed)
 - Weights: 500, 600
+  font-family: 'Barlow Semi Condensed', sans-serif;

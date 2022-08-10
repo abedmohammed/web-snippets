@@ -1,0 +1,103 @@
+:root {
+  --violet: hsl(263, 55%, 52%);
+  --dark-grayish-blue: hsl(217, 19%, 35%);
+  --dark-blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(0, 0%, 81%);
+  --grayish-blue: hsl(210, 46%, 95%);
+}
+
+.container {
+  height: fit-content;
+  background-color: var(--grayish-blue);
+  padding: 6rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  gap: 3rem;
+}
+
+.testimonials__card {
+  padding: 2rem 3rem 3rem 3rem;
+  border-radius: 6px;
+  box-shadow: 6rem 5rem 8rem -2rem rgba(0, 0, 0, 0.15);
+
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  color: var(--grayish-blue);
+}
+
+.dark {
+  color: var(--dark-blackish-blue);
+}
+
+.daniel {
+  background-color: var(--violet);
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 90% 0;
+  background-size: 12rem;
+}
+
+.jonathan {
+  background-color: var(--dark-grayish-blue);
+}
+
+.jeanette {
+  background-color: var(--white);
+}
+
+.patrick {
+  background-color: var(--dark-blackish-blue);
+}
+
+.kira {
+  background-color: var(--white);
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card__writer {
+  display: flex;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.card__profile-picture {
+  border-radius: 50%;
+  width: 4rem;
+  margin-right: 2rem;
+}
+
+.card__athor {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.card__job {
+  font-size: 1.8rem;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.card__header {
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 3rem;
+  margin-bottom: 2rem;
+}
+
+.card__review {
+  font-size: 1.8rem;
+  font-weight: 500;
+  opacity: 0.7;
+  line-height: 2.4rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}

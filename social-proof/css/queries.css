@@ -1,0 +1,54 @@
+@media (max-width: 68em) {
+  body {
+    align-items: flex-start;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding-bottom: 10rem;
+    margin: 5rem;
+  }
+
+  .introduction {
+    min-width: 20rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .introduction__header {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ratings {
+    justify-self: center;
+    max-width: fit-content;
+    margin-bottom: 5rem;
+  }
+
+  .ratings__card {
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+
+  .reviews {
+    flex-direction: column;
+    width: fit-content;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
+
+@media (max-width: 32em) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 23.5em) {
+  body {
+    background-image: url(../images/bg-pattern-top-mobile.svg),
+      url(../images/bg-pattern-bottom-mobile.svg);
+  }
+}

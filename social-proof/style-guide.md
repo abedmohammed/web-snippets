@@ -30,3 +30,9 @@ White: hsl(0, 0%, 100%)
 
 - Family: [League Spartan](https://fonts.google.com/specimen/League+Spartan)
 - Weights: 400, 500, 700
+- font-family: 'League Spartan', sans-serif;
+
+      Anne Wallace
+      Verified Buyer
+      "Put an order with this company and can only praise them for the very high
+      standard. Will definitely use them again and recommend them to everyone!"

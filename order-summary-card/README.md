@@ -1,12 +1,6 @@
 # Frontend Mentor - Order Summary Component
 
-This is a solution to the [Order Summary Component](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
-
-### The challenge
-
-Users should be able to:
-
-- See hover and focus states for interactive elements
+This is a solution to the [Order Summary Component](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj).
 
 ### Screenshot
 
@@ -16,3 +10,4 @@ Users should be able to:
 
 - HTML5
 - CSS
+- BEM

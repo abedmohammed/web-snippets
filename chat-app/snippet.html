@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <title>Frontend Mentor | Chat app CSS illustration</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="chat-app__background--left"></div>
+      <div class="chat-app__background--right"></div>
+      <div class="chat-app">
+        <figure class="phone">
+          <div class="chatbox">
+            <div class="chatbox__banner">
+              <div class="banner__notch"></div>
+              <div class="banner__person">
+                <div class="person__back-arrow"></div>
+                <div class="person__profile-picture">
+                  <img
+                    src="./images/avatar.jpg"
+                    alt="Samuel Green's profile picture"
+                  />
+                </div>
+                <div class="person__info">
+                  <p class="person__name">Samuel Green</p>
+                  <p class="person__status">Available to Walk</p>
+                </div>
+                <div class="person__more-options"></div>
+              </div>
+            </div>
+            <div class="chatbox__chat">
+              <div class="chat__texts">
+                <div class="texts sender">
+                  <p>That sounds great. I’d be happy with that.</p>
+                </div>
+                <div class="texts sender">
+                  <p>Could you send over some pictures of your dog, please?</p>
+                </div>
+                <div class="texts receiver images">
+                  <div class="texts--images">
+                    <img
+                      src="./images/dog-image-1.jpg"
+                      alt="Picture of dog with tongue out"
+                    />
+                    <img
+                      src="./images/dog-image-2.jpg"
+                      alt="Picture of dog sitting down"
+                    />
+                    <img
+                      src="./images/dog-image-3.jpg"
+                      alt="Picture of dog with stick in her mouth"
+                    />
+                  </div>
+                </div>
+                <div class="texts receiver">
+                  <p>Here are a few pictures. She’s a happy girl!</p>
+                </div>
+                <div class="texts receiver small"><p>Can you make it?</p></div>
+                <div class="texts sender">
+                  <p>
+                    She looks so happy! The time we discussed works. How long
+                    shall I take her out for?
+                  </p>
+                </div>
+                <div class="texts sender request">
+                  <div class="request__radio-btn"></div>
+                  <p class="request__type">30 minute walk</p>
+                  <h3 class="request__price">$29</h3>
+                </div>
+                <div class="texts sender request">
+                  <div class="request__radio-btn"></div>
+                  <p class="request__type">1 hour walk</p>
+                  <h3 class="request__price">$49</h3>
+                </div>
+              </div>
+              <div class="chat__input">
+                <div class="input__placeholder">Type a message...</div>
+                <div class="input__send">
+                  <div class="input__chevron"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </figure>
+        <aside class="caption">
+          <h1 class="caption__header">Simple booking</h1>
+          <p class="caption__description">
+            Stay in touch with our dog walkers through the chat interface. This
+            makes it easy to discuss arrangements and make bookings. Once the
+            walk has been completed you can rate your walker and book again all
+            through the chat.
+          </p>
+        </aside>
+      </div>
+    </main>
+  </body>
+</html>

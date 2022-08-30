@@ -1,0 +1,41 @@
+@media (max-width: 67em) {
+  html {
+    font-size: 8px;
+  }
+
+  .container {
+    display: block;
+  }
+
+  .chat-app__background--left,
+  .chat-app__background--right {
+    width: 50rem;
+    height: 80rem;
+  }
+
+  .chat-app__background--left {
+    top: -35rem;
+    left: -25rem;
+  }
+
+  .chat-app__background--right {
+    bottom: -50rem;
+    right: -30rem;
+  }
+
+  .chat-app {
+    margin: 10rem 5rem 5rem 5rem;
+    flex-direction: column;
+  }
+
+  .phone {
+    max-width: 37rem;
+    margin: 0;
+  }
+
+  .caption {
+    margin-top: 10rem;
+    padding: 0 2rem 0 2rem;
+    text-align: center;
+  }
+}

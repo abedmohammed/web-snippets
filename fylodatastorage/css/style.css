@@ -11,6 +11,7 @@ body {
   background: url(../images/bg-desktop.png) bottom right no-repeat,
     var(--very-dark-blue);
   background-size: 100% auto;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,18 +24,135 @@ body {
   width: 100%;
   gap: 2.4rem;
   margin: 0 5rem;
+  align-items: flex-end;
 }
 
 .container > div {
   background-color: var(--dark-blue);
-  padding: 2.4rem;
-  border-radius: 5px;
+  padding: 3.6rem;
+  border-radius: 10px;
 }
 
 .menu {
-  flex-basis: 37.5rem;
+  flex-grow: 0.25;
+  border-top-right-radius: 80px !important;
+}
+
+.menu__logo {
+  width: 14rem;
+  margin-bottom: 3rem;
+}
+
+.menu__options {
+  display: flex;
+  gap: 1.8rem;
+}
+
+.options__icon {
+  background-color: var(--very-dark-blue);
+  padding: 1rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  transition: all 0.1s;
+}
+
+.options__icon:hover {
+  cursor: pointer;
+  transform: translateY(-0.2rem);
 }
 
 .storage {
   flex-grow: 1;
+}
+
+.storage__bar {
+  position: relative;
+}
+
+.storage__notice {
+  color: var(--pale-blue);
+  font-size: 1.3rem;
+  margin-bottom: 1.4rem;
+}
+
+.storage__notice span {
+  font-weight: 700;
+}
+
+.bar__empty {
+  width: 100%;
+  height: 1.8rem;
+  border-radius: 999px;
+  background-color: var(--very-dark-blue);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 0.6rem;
+}
+
+.bar__progress {
+  margin-left: 0.3rem;
+  flex-basis: 81.5%;
+  height: 1.2rem;
+  border-radius: 999px;
+  background: linear-gradient(to right, var(--gradient1), var(--gradient2));
+  position: relative;
+}
+
+.bar__progress::after {
+  content: '';
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 100%;
+  background-color: #fff;
+  position: absolute;
+  right: 1%;
+  top: -50%;
+  transform: translateY(100%);
+}
+
+.bar__bubble {
+  position: absolute;
+  top: -10rem;
+  right: 1rem;
+
+  background-color: #fff;
+  padding: 1.6rem 2rem;
+  border-radius: 10px;
+  border-bottom-right-radius: 0;
+}
+
+.bar__bubble h1 {
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.bar__bubble span {
+  font-size: 1.3rem;
+  color: var(--grayish-blue);
+  text-transform: uppercase;
+}
+
+.bar__bubble::after {
+  content: '';
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 15px solid transparent;
+  border-right: 15px solid #fff;
+  border-top: 15px solid #fff;
+  border-bottom: 15px solid transparent;
+  right: 0;
+  top: 80%;
+}
+
+.storage__axis {
+  display: flex;
+  justify-content: space-between;
+  color: var(--pale-blue);
+  font-size: 1.3rem;
+  font-weight: 700;
 }

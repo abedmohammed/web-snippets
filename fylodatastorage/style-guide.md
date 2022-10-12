@@ -32,7 +32,7 @@ The designs were created to the following widths:
 - Weights: 400, 700
 - font-family: 'Raleway', sans-serif;
 
-You’ve used 815 GB of your storage
+
 
 185 GB Left
 

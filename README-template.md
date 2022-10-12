@@ -1,8 +1,4 @@
-# Frontend Mentor - SNIPPER NAME
-
-This is a solution to the [SNIPPET NAME](CHALLENGE LINK).
-
-### Screenshot
+# Frontend Mentor - SNIPPET NAME
 
 ![](./final.png)
 

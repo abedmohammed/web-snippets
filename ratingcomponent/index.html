@@ -27,5 +27,40 @@
 
     <script defer src="js/script.js"></script>
   </head>
-  <body></body>
+  <body>
+    <main class="container">
+      <div class="rating">
+        <div class="rating__header">
+          <img src="images/icon-star.svg" alt="Star icon" />
+        </div>
+        <div class="rating__text">
+          <h1>How did we do?</h1>
+          <p>
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+        </div>
+        <div class="rating__choices">
+          <div data-val="1">1</div>
+          <div data-val="2">2</div>
+          <div data-val="3">3</div>
+          <div data-val="4">4</div>
+          <div data-val="5">5</div>
+        </div>
+        <button class="rating__submit">Submit</button>
+      </div>
+
+      <div class="completed hidden">
+        <figure class="completed__image">
+          <img src="images/illustration-thank-you.svg" alt="Image of phone" />
+          <figcaption class="image__rating">
+            You selected <span class="user-rating">4</span> out of 5
+          </figcaption>
+        </figure>
+        <h2 class="completed__thanks">Thank you!</h1>
+        <p>We appreciate you taking the time to give a rating. If
+          you ever need more support, don’t hesitate to get in touch!</p>
+      </div>
+    </main>
+  </body>
 </html>

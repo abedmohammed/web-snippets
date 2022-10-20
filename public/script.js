@@ -7,10 +7,31 @@ const generateCard = function (data) {
     tags += `<p class="tags--${el}">${el}</p>`;
   });
   return `
-    <article data-link="${data.link}/" class="card">
+    <article class="card">
+      <a class="card__link" href="${data.link}/"></a>
       <div class="card__figure">
         <img class="figure__image image-${data.size}" src="${data.link}/final.png" alt="${data.name} image" />
-        <div class="figure__cover"></div>
+        <div class="figure__cover">
+            <div class="cover__shadow"></div>
+            <div class="cover__links">
+              <a
+                href="https://github.com/abedmohammed/web-snippets/tree/main/${data.link}/"
+              >
+                <img
+                  class="links__github links__image"
+                  src="public/images/github-icon.svg"
+                  alt="Github icon"
+                />
+              </a>
+              <a href="${data.link}/">
+                <img
+                  class="links__live links__image"
+                  src="public/images/external-link-icon.svg"
+                  alt="Website link icon"
+                />
+              </a>
+            </div>
+          </div>
       </div>
       <div class="card__content">
         <h2 class="content__name">${data.name}</h2>
@@ -36,8 +57,15 @@ const populateCards = function () {
 populateCards();
 const cards = Array.from(document.querySelectorAll('.card'));
 
-cards.forEach((card) => {
-  card.addEventListener('click', function () {
-    window.location.href = `/${this.dataset.link}`;
-  });
-});
+// cards.forEach((card) => {
+//   card.addEventListener('click', function (e) {
+//     if (e.target.classList.contains('links__image')) return;
+
+//     if (e.shiftKey || e.metaKey) {
+//       window.open(`${window.location.href}/${this.dataset.link}`);
+//       return;
+//     }
+
+//     window.location.href = `/${this.dataset.link}`;
+//   });
+// });

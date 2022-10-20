@@ -9,7 +9,8 @@ const generateCard = function (data) {
   return `
     <article data-link="${data.link}/" class="card">
       <div class="card__figure">
-        <img class="figure__image" src="${data.link}/final.png" alt="${data.name} image" />
+        <img class="figure__image image-${data.size}" src="${data.link}/final.png" alt="${data.name} image" />
+        <div class="figure__cover"></div>
       </div>
       <div class="card__content">
         <h2 class="content__name">${data.name}</h2>
@@ -24,7 +25,7 @@ const generateCard = function (data) {
 const populateCards = function () {
   const container = document.querySelector('.container');
 
-  snippets.sort((a, b) => Date.parse(a.date) - Date.parse(b.date));
+  snippets.sort((b, a) => Date.parse(a.date) - Date.parse(b.date));
 
   snippets.forEach((snippet) => {
     const html = generateCard(snippet);

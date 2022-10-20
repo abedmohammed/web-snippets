@@ -1,0 +1,122 @@
+@media (max-width: 119em) {
+  .container {
+    gap: 4rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5rem 10rem;
+  }
+
+  .card {
+    height: 35rem;
+    width: 48rem;
+  }
+}
+
+@media (max-width: 110em) {
+  .card {
+    height: 33rem;
+    width: 45rem;
+  }
+}
+
+@media (max-width: 103em) {
+  .container {
+    padding: 5rem 4rem;
+  }
+
+  .card {
+    height: 30rem;
+    width: 40rem;
+  }
+}
+
+@media (max-width: 85em) {
+  .container {
+    gap: 4rem;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5rem 10rem;
+  }
+
+  .card {
+    height: 35rem;
+    width: 48rem;
+  }
+}
+
+@media (max-width: 75em) {
+  .container {
+    padding: 5rem 4rem;
+  }
+
+  .card {
+    height: 35rem;
+    width: 48rem;
+  }
+
+  .content__name {
+    font-size: 2.2rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .content__tags p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.2rem 1rem;
+  }
+}
+
+@media (max-width: 67.5em) {
+  .card {
+    height: 30rem;
+    width: 40rem;
+  }
+}
+
+@media (max-width: 57.5em) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+  }
+
+  .card {
+    height: 40rem;
+    width: 55rem;
+  }
+
+  .content__name {
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .content__tags p {
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 0.2rem 1rem;
+  }
+}
+
+@media (max-width: 40.5em) {
+  .card {
+    height: 30rem;
+    width: 40rem;
+  }
+}
+
+@media (max-width: 30em) {
+  .card {
+    height: 25rem;
+    width: 32rem;
+  }
+
+  .content__name {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .content__tags p {
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.2rem 1rem;
+  }
+}

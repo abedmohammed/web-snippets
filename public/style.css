@@ -1,5 +1,5 @@
 body {
-  background-color: #f5f5f5;
+  background-color: #ebebeb;
   color: #f5f5f5;
   font-family: 'Montserrat', sans-serif;
 }
@@ -16,19 +16,20 @@ body {
   height: 30rem;
   width: 40rem;
 
-  background: linear-gradient(to bottom, #306a9c 50%, #26547c);
-  box-shadow: 11px 11px 37px -18px rgba(0, 0, 0, 0.4);
-  cursor: pointer;
+  background: #3574ac;
+  /* linear-gradient(to bottom, #306a9c 100%, #26547c) */
+  box-shadow: 11px 11px 37px -10px rgba(0, 0, 0, 0.4);
+  /* cursor: pointer; */
   transition: all 0.3s;
 }
 
 .card:hover {
   transform: translate(2px, -5px);
-  box-shadow: 11px 11px 37px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: 11px 11px 43px 5px rgba(0, 0, 0, 0.2);
 }
 
 .card__figure {
-  background-color: #ef476f;
+  background-color: #ebebeb;
   position: relative;
   height: 75%;
   overflow: hidden;
@@ -47,13 +48,53 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
+}
+
+.cover__shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s;
   background: linear-gradient(to bottom, #000 20%, rgba(255, 0, 0, 0)) 40%;
+  opacity: 0;
+}
+
+.card:hover .cover__shadow {
+  opacity: 60%;
+}
+
+.cover__links {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  gap: 4rem;
+}
+
+.card:hover .links__image {
+  opacity: 70%;
+}
+
+.links__image {
+  background-color: #f5f5f5;
+  padding: 1.5rem;
+  border-radius: 5px;
   opacity: 0;
   transition: all 0.4s;
 }
 
-.card:hover .figure__cover {
-  opacity: 60%;
+.links__image:hover {
+  opacity: 95% !important;
+}
+
+.links__github {
+  width: 8rem;
+}
+
+.links__live {
+  width: 8rem;
 }
 
 .image-tiny {
@@ -91,6 +132,7 @@ body {
 }
 
 .content__tags p {
+  color: #ebebeb;
   font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;

@@ -1,8 +1,6 @@
 @media (max-width: 119em) {
-  .container {
+  .card-container {
     gap: 4rem;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 5rem 10rem;
   }
 
   .card {
@@ -19,32 +17,20 @@
 }
 
 @media (max-width: 103em) {
-  .container {
-    padding: 5rem 4rem;
-  }
-
   .card {
     height: 30rem;
     width: 40rem;
   }
 }
 
-@media (max-width: 85em) {
+@media (max-width: 92.5em) {
   .container {
+    padding: 5rem 0;
+  }
+
+  .card-container {
     gap: 4rem;
     grid-template-columns: repeat(2, 1fr);
-    padding: 5rem 10rem;
-  }
-
-  .card {
-    height: 35rem;
-    width: 48rem;
-  }
-}
-
-@media (max-width: 75em) {
-  .container {
-    padding: 5rem 4rem;
   }
 
   .card {
@@ -59,24 +45,30 @@
 
   .content__tags p {
     font-size: 1.2rem;
-    font-weight: 700;
-    padding: 0.2rem 1rem;
   }
 }
 
-@media (max-width: 67.5em) {
+@media (max-width: 75em) {
   .card {
     height: 30rem;
     width: 40rem;
   }
+
+  .content__name {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .content__tags p {
+    font-size: 1rem;
+  }
 }
 
-@media (max-width: 57.5em) {
-  .container {
+@media (max-width: 65.5em) {
+  .card-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5rem 0;
   }
 
   .card {
@@ -103,10 +95,19 @@
   }
 }
 
-@media (max-width: 30em) {
+@media (max-width: 47em) {
   .card {
     height: 25rem;
     width: 32rem;
+  }
+
+  .header__title {
+    font-size: 3.5rem;
+  }
+
+  .header__subtitle {
+    margin-top: 5rem;
+    font-size: 1.6rem;
   }
 
   .content__name {

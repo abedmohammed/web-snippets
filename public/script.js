@@ -34,7 +34,7 @@ const generateCard = function (data) {
           </div>
       </div>
       <div class="card__content">
-        <h2 class="content__name">${data.name}</h2>
+        <h3 class="content__name">${data.name}</h3>
         <div class="content__tags">
         ${tags}
         </div>
@@ -44,7 +44,7 @@ const generateCard = function (data) {
 };
 
 const populateCards = function () {
-  const container = document.querySelector('.container');
+  const container = document.querySelector('.card-container');
 
   snippets.sort((b, a) => Date.parse(a.date) - Date.parse(b.date));
 

@@ -1,17 +1,52 @@
+/* 3 GRID */
 @media (max-width: 116em) {
   .card-container {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
+/* 2 GRID */
 @media (max-width: 92.5em) {
   .card-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
+/* 1 GRID */
 @media (max-width: 64em) {
   .card-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* Mobile Text and Padding */
+@media (max-width: 50em) {
+  .container {
+    padding: 10rem 5rem;
+  }
+
+  .header__title {
+    font-size: 3.6rem;
+  }
+
+  .header__subtitle {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 32em) {
+  .container {
+    padding: 10rem 5rem;
+  }
+
+  .header__title {
+    font-size: 3.2rem;
+  }
+
+  .header__subtitle {
+    font-size: 1.6rem;
+  }
+
+  .card-container {
+    padding: 2rem 0;
   }
 }

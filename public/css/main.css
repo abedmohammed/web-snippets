@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-  /* width: min-content; */
+  width: 100%;
   padding: 20rem 10rem;
 }
 
@@ -38,7 +38,7 @@ body {
 }
 
 .card-container {
-  width: min-content;
+  width: 100%;
   display: grid;
   justify-items: center;
   gap: 1rem;

@@ -1,0 +1,17 @@
+@media (max-width: 116em) {
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 92.5em) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 64em) {
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

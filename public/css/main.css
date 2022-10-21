@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-  max-width: min-content;
+  /* width: min-content; */
   padding: 20rem 10rem;
 }
 

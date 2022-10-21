@@ -12,31 +12,31 @@ const generateCard = function (data) {
       <div class="card__figure">
         <img class="figure__image image-${data.size}" src="${data.link}/final.png" alt="${data.name} image" />
         <div class="figure__cover">
-            <div class="cover__shadow"></div>
-            <div class="cover__links">
-              <a
-                href="https://github.com/abedmohammed/web-snippets/tree/main/${data.link}/"
-              >
-                <img
-                  class="links__github links__image"
-                  src="public/images/github-icon.svg"
-                  alt="Github icon"
-                />
-              </a>
-              <a href="${data.link}/">
-                <img
-                  class="links__live links__image"
-                  src="public/images/external-link-icon.svg"
-                  alt="Website link icon"
-                />
-              </a>
+          <div class="cover__content">
+            <h3 class="content__name">${data.name}</h3>
+            <div class="content__tags">
+            ${tags}
             </div>
           </div>
-      </div>
-      <div class="card__content">
-        <h3 class="content__name">${data.name}</h3>
-        <div class="content__tags">
-        ${tags}
+          <div class="cover__shadow"></div>
+          <div class="cover__links">
+            <a
+              href="https://github.com/abedmohammed/web-snippets/tree/main/${data.link}/"
+            >
+              <img
+                class="links__github links__image"
+                src="public/images/github-icon.svg"
+                alt="Github icon"
+              />
+            </a>
+            <a href="${data.link}/">
+              <img
+                class="links__live links__image"
+                src="public/images/external-link-icon.svg"
+                alt="Website link icon"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </article>

@@ -11,10 +11,11 @@ const generateCard = function (data) {
       <a class="card__link" href="${data.link}/"></a>
       <img
         class="card__image image-${data.size}"
-        src="${data.link}/final.png"
+        src="${data.link}/final.webp"
         alt="${data.name} image"
       />
       <div class="card__cover">
+        <div data-src="${data.link}/final (1).webp" class="cover__blur"></div>
         <div class="cover__shadow"></div>
         <div class="cover__content">
           <h2 class="content__name">${data.name}</h2>
@@ -56,4 +57,21 @@ const populateCards = function () {
   });
 };
 
+const lazyLoading = function () {
+  const imgs = document.querySelectorAll('.card__image');
+
+  imgs.forEach((image) => {
+    const imageCover = image.nextElementSibling.querySelector('.cover__blur');
+    imageCover.src = imageCover.dataset.src;
+
+    image.addEventListener('load', function () {
+      imageCover.style.opacity = 0;
+      setTimeout(function () {
+        imageCover.remove();
+      }, 500);
+    });
+  });
+};
+
 populateCards();
+lazyLoading();

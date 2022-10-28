@@ -31,7 +31,7 @@ body {
 .container {
   width: 100%;
   position: relative;
-  padding: 20rem 10rem;
+  padding: 10rem 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,6 +41,54 @@ body {
 .header {
   width: 100%;
   color: var(--off-black);
+}
+
+.header__profile {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 2rem;
+}
+
+.profile__prof-pic {
+  flex-basis: 15rem;
+  height: 15rem;
+  position: relative;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.profile__socials {
+  margin-left: 3rem;
+  margin-bottom: 1rem;
+}
+
+.socials__links {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.4rem;
+}
+
+.socials__links a {
+  transition: all 0.2s;
+}
+
+.socials__links a:hover,
+.socials__links a:active {
+  transform: translateY(-5px);
+}
+
+.socials__line {
+  border-bottom: 8px solid var(--off-black);
+  opacity: 0.8;
+  border-radius: 999px;
+}
+
+.socials__prof-pic img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 150%;
+  transform: translate(-50%, -50%);
 }
 
 .header__title {

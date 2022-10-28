@@ -22,7 +22,7 @@ body {
   height: 100%;
   opacity: 0.05;
   z-index: -1;
-  background-image: url('../images/pattern3.png');
+  background-image: url('../images/pattern.webp');
   background-repeat: repeat;
   filter: grayscale(50%);
   background-size: 50rem;

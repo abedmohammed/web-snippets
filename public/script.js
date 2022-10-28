@@ -73,5 +73,16 @@ const lazyLoading = function () {
   });
 };
 
+const mobileHoverBehaviour = function () {
+  if (window.matchMedia('(hover: none)').matches) {
+    const cards = document.querySelectorAll('.card');
+    cards.forEach((card) => {
+      const cardLink = card.querySelector('.card__link');
+      cardLink.href = '#/';
+    });
+  }
+};
+
 populateCards();
 lazyLoading();
+mobileHoverBehaviour();

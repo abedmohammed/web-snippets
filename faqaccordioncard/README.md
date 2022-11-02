@@ -1,4 +1,4 @@
-# Frontend Mentor - SNIPPET NAME
+# Frontend Mentor - FAQ Accordion Card
 
 ![](./final.png)
 

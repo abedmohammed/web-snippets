@@ -84,4 +84,11 @@ export const snippets = [
     tags: ['html', 'css', 'javascript'],
     date: 'October 19, 2022',
   },
+  {
+    name: 'FAQ Accordian Card',
+    link: 'faqaccordioncard',
+    size: 'medium',
+    tags: ['html', 'css', 'javascript'],
+    date: 'October 28, 2022',
+  },
 ];

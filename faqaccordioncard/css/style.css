@@ -15,6 +15,7 @@ body {
   font-family: 'Kumbh Sans', sans-serif;
 
   background: linear-gradient(var(--violet), var(--soft-blue));
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,6 +28,8 @@ body {
   display: flex;
 
   border-radius: 25px;
+
+  margin: 5rem;
 }
 
 .illustration {

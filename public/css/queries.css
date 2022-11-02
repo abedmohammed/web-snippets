@@ -21,7 +21,7 @@
 /* Mobile Text and Padding */
 @media (max-width: 50em) {
   .container {
-    padding: 10rem 5rem;
+    padding: 5rem 5rem;
   }
 
   .header__title {
@@ -34,10 +34,6 @@
 }
 
 @media (max-width: 32em) {
-  .container {
-    padding: 10rem 5rem;
-  }
-
   .header__title {
     font-size: 3.2rem;
   }
@@ -48,5 +44,17 @@
 
   .card-container {
     padding: 2rem 0;
+  }
+}
+
+@media (max-width: 27em) {
+  .profile__prof-pic {
+    flex-basis: 40%;
+    height: 40%;
+  }
+
+  .socials__links {
+    width: 10rem;
+    gap: 1rem;
   }
 }

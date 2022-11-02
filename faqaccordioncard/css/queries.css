@@ -47,7 +47,7 @@
 
 @media (max-width: 54em) {
   .container {
-    margin-top: 15rem;
+    margin: 15rem 5rem 5rem 5rem;
   }
 
   .illustration img {
@@ -60,7 +60,7 @@
 
 @media (max-width: 34em) {
   .container {
-    margin-top: 15rem;
+    margin: 15rem 5rem 5rem 5rem;
   }
 
   .illustration img {
@@ -73,7 +73,7 @@
 
 @media (max-width: 30em) {
   .container {
-    margin-top: 15rem;
+    margin: 15rem 3rem 3rem 3rem;
   }
 
   .illustration img {
@@ -102,7 +102,7 @@
 
 @media (max-width: 26em) {
   .container {
-    margin: 10rem 3rem;
+    margin: 15rem 3rem 3rem 3rem;
   }
 
   .illustration img {
@@ -122,5 +122,19 @@
 
   .bar__question {
     font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 23em) {
+  .container {
+    margin: 15rem 2rem 5rem 2rem;
+  }
+
+  .faq__header {
+    font-size: 3rem;
+  }
+
+  .bar__question {
+    font-size: 1.2rem;
   }
 }

@@ -164,6 +164,9 @@
 .tags--javascript {
   background-color: var(--yellow);
 }
+.tags--sass {
+  background-color: var(--pink);
+}
 
 /* COVER WEBSITE LINKS */
 .cover__links {

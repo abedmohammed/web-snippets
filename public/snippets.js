@@ -119,4 +119,11 @@ export const snippets = [
     tags: ['html', 'sass'],
     date: 'January 10, 2023',
   },
+  {
+    name: 'Mapty',
+    link: 'mapty',
+    size: 'big',
+    tags: ['html', 'css', 'javascript'],
+    date: 'January 15, 2023',
+  },
 ];

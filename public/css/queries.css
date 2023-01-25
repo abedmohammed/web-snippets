@@ -1,35 +1,12 @@
-/* 3 GRID */
-@media (max-width: 116em) {
-  .card-container {
-    grid-template-columns: repeat(3, 1fr);
+@media (max-width: 68.75em) {
+  html{
+    font-size: 50%;
   }
 }
 
-/* 2 GRID */
-@media (max-width: 92.5em) {
-  .card-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* 1 GRID */
-@media (max-width: 64em) {
-  .card-container {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-/* Mobile Text and Padding */
 @media (max-width: 50em) {
-  .container {
-    padding: 5rem 5rem;
-  }
-
-  .header__title {
-    font-size: 3.6rem;
-  }
-
-  .header__subtitle {
-    font-size: 2rem;
+  html{
+    font-size: 43.75%;
   }
 }
 
@@ -39,7 +16,7 @@
   }
 
   .header__subtitle {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 
   .card-container {
@@ -48,13 +25,18 @@
 }
 
 @media (max-width: 27em) {
+
+  .container{
+    padding: 5rem;
+  }
+
   .profile__prof-pic {
     flex-basis: 40%;
     height: 40%;
   }
 
   .socials__links {
-    width: 10rem;
+    width: 12rem;
     gap: 1rem;
   }
 }

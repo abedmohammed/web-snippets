@@ -2,3 +2,4 @@
 .prettierignore
 .prettierrc.json
 .vscode
+node_modules/

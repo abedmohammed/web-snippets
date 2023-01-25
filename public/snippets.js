@@ -91,4 +91,32 @@ export const snippets = [
     tags: ['html', 'css', 'javascript'],
     date: 'October 28, 2022',
   },
+  {
+    name: 'Omnifood',
+    link: 'omnifood',
+    size: 'full',
+    tags: ['html', 'css'],
+    date: 'November 11, 2022',
+  },
+  {
+    name: 'Natours',
+    link: 'natours',
+    size: 'full',
+    tags: ['html', 'sass'],
+    date: 'January 3, 2023',
+  },
+  {
+    name: 'Trillo',
+    link: 'trillo',
+    size: 'full',
+    tags: ['html', 'sass'],
+    date: 'January 7, 2023',
+  },
+  {
+    name: 'Nexter',
+    link: 'nexter',
+    size: 'full',
+    tags: ['html', 'sass'],
+    date: 'January 10, 2023',
+  },
 ];

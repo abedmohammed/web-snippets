@@ -26,6 +26,10 @@
 
 @media (max-width: 27em) {
 
+  .card-container{
+    gap: 2rem;
+  }
+
   .container{
     padding: 5rem;
   }
@@ -37,6 +41,23 @@
 
   .socials__links {
     width: 12rem;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 22em) {
+
+  .container{
+    padding: 3rem;
+  }
+
+  .profile__prof-pic {
+    flex-basis: 30%;
+    height: 30%;
+  }
+
+  .socials__links {
+    width: 11rem;
     gap: 1rem;
   }
 }

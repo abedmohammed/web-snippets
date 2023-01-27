@@ -126,4 +126,12 @@ export const snippets = [
     tags: ['html', 'css', 'javascript'],
     date: 'november 30, 2022',
   },
+  {
+    name: 'Food Base',
+    externalLink: 'https://foodbase.netlify.app/',
+    link: 'foodbase',
+    size: 'full',
+    tags: ['html', 'css', 'javascript', 'api'],
+    date: 'december, 2022', 
+  },
 ];

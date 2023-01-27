@@ -167,6 +167,12 @@
 .tags--sass {
   background-color: var(--pink);
 }
+.tags--api {
+  background-color: var(--purple);
+}
+.tags--react {
+  background-color: var(--blue);
+}
 
 /* COVER WEBSITE LINKS */
 .cover__links {

@@ -5,9 +5,9 @@
   --red: #ed315d;
   --green: #05b384;
   --yellow: #ffb60a;
-  --pink: #D85B98;
-  --purple: #C04CFD;
-  --blue: #306A9C;
+  --pink: #d85b98;
+  --purple: #c04cfd;
+  --blue: #306a9c;
 }
 
 body {
@@ -109,7 +109,7 @@ body {
   display: grid;
   justify-items: center;
   grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   grid-template-rows: 1fr;
   padding: 5rem 0;
 }

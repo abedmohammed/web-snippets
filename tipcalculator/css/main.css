@@ -38,6 +38,8 @@ body {
   width: 92rem;
   height: 48rem;
   margin: 30rem auto 0 auto;
+  border-radius: 2.6rem;
+  box-shadow: 5px 5px 30px 5px rgba(0, 0, 0, 0.1);
 }
 .calculator__logo {
   width: 8rem;

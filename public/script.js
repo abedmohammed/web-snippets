@@ -8,7 +8,9 @@ const generateCard = function (data) {
   });
   return `
     <article class="card">
-      <a class="card__link" href="${data.externalLink ? data.externalLink  : data.link}/"></a>
+      <a class="card__link" href="${
+        data.externalLink ? data.externalLink : data.link
+      }/"></a>
       <img
         class="card__image image-${data.size}"
         src="${data.link}/final.webp"
@@ -25,7 +27,11 @@ const generateCard = function (data) {
         </div>
         <div class="cover__links">
           <a
-            href="https://github.com/abedmohammed/${data.externalLink ? data.link : `web-snippets/tree/main/${data.link}`}"
+            href="https://github.com/abedmohammed/${
+              data.externalLink
+                ? data.link
+                : `web-snippets/tree/main/${data.link}`
+            }"
           >
             <img
               class="links__github links__image"
@@ -33,7 +39,7 @@ const generateCard = function (data) {
               alt="Github icon"
             />
           </a>
-          <a href="${data.link}/">
+          <a href="${data.externalLink ? data.externalLink : data.link}/">
             <img
               class="links__live links__image"
               src="public/images/external-link-icon.svg"

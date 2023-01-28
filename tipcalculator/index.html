@@ -26,8 +26,80 @@
   <body>
     <main class="calculator">
       <img src="images/logo.svg" alt="Splitter logo" class="calculator__logo" />
-      <div class="form"></div>
-      <div class="cheque"></div>
+      <form class="form">
+        <div class="form__group">
+          <input
+            type="number"
+            step="0.01"
+            min="0.00"
+            class="form__input"
+            id="bill"
+          />
+          <label for="bill" class="form__label">Bill</label>
+        </div>
+
+        <div class="form__group">
+          <ul class="tip">
+            <li class="tip__option">
+              <input type="checkbox" class="tip__checkbox" id="box-1" />
+              <label for="box-1" class="tip__label">5%</label>
+            </li>
+
+            <li class="tip__option">
+              <input type="checkbox" class="tip__checkbox" id="box-2" />
+              <label for="box-2" class="tip__label">10%</label>
+            </li>
+
+            <li class="tip__option">
+              <input type="checkbox" class="tip__checkbox" id="box-3" />
+              <label for="box-3" class="tip__label">15%</label>
+            </li>
+
+            <li class="tip__option">
+              <input type="checkbox" class="tip__checkbox" id="box-4" />
+              <label for="box-4" class="tip__label">25%</label>
+            </li>
+
+            <li class="tip__option">
+              <input type="checkbox" class="tip__checkbox" id="box-5" />
+              <label for="box-5" class="tip__label">50%</label>
+            </li>
+
+            <li class="tip__option">
+              <input
+                type="number"
+                min="0"
+                step="1"
+                class="tip__custom"
+                id="box-custom"
+              />
+            </li>
+          </ul>
+          <label class="form__label">Select Tip %</label>
+        </div>
+
+        <div class="form__group">
+          <input
+            type="number"
+            step="1"
+            min="1"
+            class="form__input"
+            id="people"
+          />
+          <label for="people" class="form__label">Number of People</label>
+        </div>
+      </form>
+      <div class="cheque">
+        <div class="cheque__amount">
+          <p class="cheque__title">Tip Amount</p>
+          <p class="cheque__sub-title">/ person</p>
+        </div>
+        <div class="cheque__total">
+          <p class="cheque__title">Total</p>
+          <p class="cheque__sub-title">/ person</p>
+        </div>
+        <button class="cheque__reset">Reset</button>
+      </div>
     </main>
 
     <!-- Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /

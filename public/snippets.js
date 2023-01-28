@@ -134,4 +134,11 @@ export const snippets = [
     tags: ['html', 'css', 'javascript', 'api'],
     date: 'december, 2022', 
   },
+  {
+    name: 'Tip Calculator',
+    link: 'tipcalculator',
+    size: 'medium',
+    tags: ['html', 'sass', 'javascript'],
+    date: 'january 28, 2023',
+  },
 ];

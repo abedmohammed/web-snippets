@@ -11,6 +11,28 @@ $Very-light-grayish-cyan: #f4fafa;
 
 $White: #ffffff;
 
+// REUSE
+
+%btn-gray {
+  padding: 1.7rem;
+  background-color: $Very-light-grayish-cyan;
+  border-radius: 5px;
+  color: $Very-dark-cyan;
+  font-size: 2.4rem;
+  text-align: right;
+  border: none;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  &[type='number'] {
+    -moz-appearance: textfield;
+  }
+}
+
 *,
 *::before,
 *::after {

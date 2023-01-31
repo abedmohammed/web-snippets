@@ -26,68 +26,88 @@
   <body>
     <main class="calculator">
       <img src="images/logo.svg" alt="Splitter logo" class="calculator__logo" />
-      <form class="form">
+      <form action="#" class="form">
         <div class="form__container">
           <div class="form__group">
-            <input
-              type="number"
-              step="0.01"
-              min="0.00"
-              class="form__input"
-              id="bill"
-            />
             <label for="bill" class="form__label">Bill</label>
+            <div class="form__input-container">
+              <input
+                placeholder="0"
+                type="number"
+                step="0.01"
+                min="0.00"
+                class="form__input"
+                id="bill"
+              />
+
+              <img
+                src="images/icon-dollar.svg"
+                alt="Dollar sign"
+                class="form__icon"
+              />
+            </div>
           </div>
 
           <div class="form__group">
             <ul class="tip">
-              <li class="tip__option">
-                <input type="checkbox" class="tip__checkbox" id="box-1" />
-                <label for="box-1" class="tip__label">5%</label>
-              </li>
+              <label class="form__label">Select Tip %</label>
+              <div class="tip__grid">
+                <li class="tip__option">
+                  <input type="checkbox" class="tip__checkbox" id="box-1" />
+                  <label for="box-1" class="tip__label">5%</label>
+                </li>
 
-              <li class="tip__option">
-                <input type="checkbox" class="tip__checkbox" id="box-2" />
-                <label for="box-2" class="tip__label">10%</label>
-              </li>
+                <li class="tip__option">
+                  <input type="checkbox" class="tip__checkbox" id="box-2" />
+                  <label for="box-2" class="tip__label">10%</label>
+                </li>
 
-              <li class="tip__option">
-                <input type="checkbox" class="tip__checkbox" id="box-3" />
-                <label for="box-3" class="tip__label">15%</label>
-              </li>
+                <li class="tip__option">
+                  <input type="checkbox" class="tip__checkbox" id="box-3" />
+                  <label for="box-3" class="tip__label">15%</label>
+                </li>
 
-              <li class="tip__option">
-                <input type="checkbox" class="tip__checkbox" id="box-4" />
-                <label for="box-4" class="tip__label">25%</label>
-              </li>
+                <li class="tip__option">
+                  <input type="checkbox" class="tip__checkbox" id="box-4" />
+                  <label for="box-4" class="tip__label">25%</label>
+                </li>
 
-              <li class="tip__option">
-                <input type="checkbox" class="tip__checkbox" id="box-5" />
-                <label for="box-5" class="tip__label">50%</label>
-              </li>
+                <li class="tip__option">
+                  <input type="checkbox" class="tip__checkbox" id="box-5" />
+                  <label for="box-5" class="tip__label">50%</label>
+                </li>
 
-              <li class="tip__option">
-                <input
-                  type="number"
-                  min="0"
-                  step="1"
-                  class="tip__custom"
-                  id="box-custom"
-                />
-              </li>
+                <li class="tip__option">
+                  <input
+                    placeholder="Custom"
+                    type="number"
+                    min="0"
+                    step="1"
+                    class="tip__custom"
+                    id="box-custom"
+                  />
+                </li>
+              </div>
             </ul>
-            <label class="form__label">Select Tip %</label>
           </div>
 
           <div class="form__group">
-            <input
-              type="number"
-              step="1"
-              min="1"
-              class="form__input"
-              id="people"
-            />
             <label for="people" class="form__label">Number of People</label>
+            <div class="form__input-container">
+              <input
+                placeholder="0"
+                type="number"
+                step="1"
+                min="1"
+                class="form__input"
+                id="people"
+              />
+              <img
+                src="images/icon-person.svg"
+                alt="Person icon"
+                class="form__icon"
+              />
+            </div>
           </div>
         </div>
       </form>

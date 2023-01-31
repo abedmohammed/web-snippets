@@ -29,6 +29,7 @@ select {
 
 body {
   font-family: "Space Mono", monospace;
+  font-weight: 700;
   background-color: #c5e4e7;
 }
 
@@ -38,8 +39,10 @@ body {
   width: 92rem;
   height: 48rem;
   margin: 30rem auto 0 auto;
+  padding: 3.2rem;
   border-radius: 2.6rem;
   box-shadow: 5px 5px 30px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
 }
 .calculator__logo {
   width: 8rem;
@@ -47,4 +50,39 @@ body {
   top: -12rem;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.form {
+  flex: 1;
+}
+.form__container {
+  padding: 1.6rem;
+}
+
+.cheque {
+  flex: 1;
+  border-radius: 2.6rem;
+  background-color: #00494d;
+  height: 100%;
+}
+.cheque__container {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.cheque__amount, .cheque__total {
+  display: flex;
+  justify-content: space-between;
+}
+.cheque__title {
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+.cheque__subtitle {
+  color: #7f9c9f;
+  font-size: 1.3rem;
+}
+.cheque__reset {
+  margin-top: auto;
 }/*# sourceMappingURL=main.css.map */

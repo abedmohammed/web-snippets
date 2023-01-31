@@ -6,9 +6,12 @@
   height: 48rem; // TEMPORARY
 
   margin: 30rem auto 0 auto;
+  padding: 3.2rem;
 
   border-radius: 2.6rem;
   box-shadow: 5px 5px 30px 5px rgba(0, 0, 0, 0.1);
+
+  display: flex;
 
   &__logo {
     width: 8rem;
@@ -17,5 +20,47 @@
     top: -12rem;
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+
+.form {
+  flex: 1;
+
+  &__container {
+    padding: 1.6rem;
+  }
+}
+
+.cheque {
+  flex: 1;
+  border-radius: 2.6rem;
+  background-color: $Very-dark-cyan;
+  height: 100%;
+
+  &__container {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__amount,
+  &__total {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    color: $White;
+    font-size: 1.6rem;
+  }
+
+  &__subtitle {
+    color: $Grayish-cyan;
+    font-size: 1.3rem;
+  }
+
+  &__reset {
+    margin-top: auto;
   }
 }

@@ -70,10 +70,12 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  gap: 4rem;
 }
 .cheque__amount, .cheque__total {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .cheque__title {
   color: #ffffff;
@@ -85,4 +87,16 @@ body {
 }
 .cheque__reset {
   margin-top: auto;
+  border: none;
+  background-color: #26c0ab;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #00494d;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 5px;
+}
+.cheque__number {
+  color: #26c0ab;
+  font-size: 4.8rem;
 }/*# sourceMappingURL=main.css.map */

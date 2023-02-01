@@ -5,6 +5,8 @@ $Very-dark-cyan: #00494d;
 
 $Dark-grayish-cyan: #5e7a7d;
 $Grayish-cyan: #7f9c9f;
+$Hover-cyan: #9fe8df;
+$Light-red: #e17052;
 
 $Light-grayish-cyan: #c5e4e7;
 $Very-light-grayish-cyan: #f4fafa;
@@ -30,6 +32,14 @@ $White: #ffffff;
 
   &[type='number'] {
     -moz-appearance: textfield;
+  }
+
+  &:focus {
+    outline: 2px solid $Strong-cyan;
+  }
+
+  &:invalid {
+    outline: 2px solid $Light-red;
   }
 }
 

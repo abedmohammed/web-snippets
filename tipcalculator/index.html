@@ -19,6 +19,8 @@
       rel="stylesheet"
     />
 
+    <script defer src="script.js"></script>
+
     <link rel="stylesheet" href="css/main.css" />
 
     <title>Frontend Mentor | Tip calculator app</title>
@@ -53,27 +55,52 @@
               <label class="form__label">Select Tip %</label>
               <div class="tip__grid">
                 <li class="tip__option">
-                  <input type="checkbox" class="tip__checkbox" id="box-1" />
+                  <input
+                    name="tipAmount"
+                    type="radio"
+                    class="tip__checkbox"
+                    id="box-1"
+                  />
                   <label for="box-1" class="tip__label">5%</label>
                 </li>
 
                 <li class="tip__option">
-                  <input type="checkbox" class="tip__checkbox" id="box-2" />
+                  <input
+                    name="tipAmount"
+                    type="radio"
+                    class="tip__checkbox"
+                    id="box-2"
+                  />
                   <label for="box-2" class="tip__label">10%</label>
                 </li>
 
                 <li class="tip__option">
-                  <input type="checkbox" class="tip__checkbox" id="box-3" />
+                  <input
+                    name="tipAmount"
+                    type="radio"
+                    class="tip__checkbox"
+                    id="box-3"
+                  />
                   <label for="box-3" class="tip__label">15%</label>
                 </li>
 
                 <li class="tip__option">
-                  <input type="checkbox" class="tip__checkbox" id="box-4" />
+                  <input
+                    name="tipAmount"
+                    type="radio"
+                    class="tip__checkbox"
+                    id="box-4"
+                  />
                   <label for="box-4" class="tip__label">25%</label>
                 </li>
 
                 <li class="tip__option">
-                  <input type="checkbox" class="tip__checkbox" id="box-5" />
+                  <input
+                    name="tipAmount"
+                    type="radio"
+                    class="tip__checkbox"
+                    id="box-5"
+                  />
                   <label for="box-5" class="tip__label">50%</label>
                 </li>
 
@@ -118,14 +145,14 @@
               <p class="cheque__title">Tip Amount</p>
               <p class="cheque__subtitle">/ person</p>
             </div>
-            <div id="amount" class="cheque__number">$4.27</div>
+            <div id="amount" class="cheque__number">$0.00</div>
           </div>
           <div class="cheque__total">
             <div class="cheque__text">
               <p class="cheque__title">Total</p>
               <p class="cheque__subtitle">/ person</p>
             </div>
-            <div id="total" class="cheque__number">$32.79</div>
+            <div id="total" class="cheque__number">$0.00</div>
           </div>
           <button class="cheque__reset">Reset</button>
         </div>

@@ -14,6 +14,12 @@
 [type=number].tip__custom, [type=number].form__input {
   -moz-appearance: textfield;
 }
+.tip__custom:focus, .form__input:focus {
+  outline: 2px solid #26c0ab;
+}
+.tip__custom:invalid, .form__input:invalid {
+  outline: 2px solid #e17052;
+}
 
 *,
 *::before,
@@ -112,6 +118,10 @@ body {
   position: absolute;
   left: -999999%;
 }
+.tip__checkbox:checked + .tip__label {
+  background-color: #26c0ab;
+  color: #00494d;
+}
 .tip__label {
   background-color: #00494d;
   display: block;
@@ -122,6 +132,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+.tip__label:hover {
+  background-color: #9fe8df;
+  color: #00494d;
 }
 .tip__custom {
   display: block;
@@ -159,6 +174,7 @@ body {
   font-size: 1.3rem;
 }
 .cheque__reset {
+  cursor: pointer;
   margin-top: auto;
   border: none;
   background-color: #26c0ab;
@@ -168,6 +184,14 @@ body {
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-radius: 5px;
+  transition: all 0.2s;
+}
+.cheque__reset:hover {
+  transform: translateY(-3px);
+  background-color: #9fe8df;
+}
+.cheque__reset:active {
+  transform: translateY(-1px);
 }
 .cheque__number {
   color: #26c0ab;

@@ -1,27 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <!-- FONT -->
-  
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- STYLE -->
-  <link rel="stylesheet" href="css/main.css" />
-  
-  <!-- JAVASCRIPT -->
-  <script defer src="script.js"></script>
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
+      rel="stylesheet"
+    />
 
-  <title>Frontend Mentor | Advice generator app</title>
+    <!-- STYLE -->
+    <link rel="stylesheet" href="css/main.css" />
 
-</head>
-<body>
+    <!-- JAVASCRIPT -->
+    <script defer src="script.js"></script>
 
-  Advice #<!-- Advice ID goes here -->
-
-  "<!-- Advice text goes here -->"
-</body>
+    <title>Frontend Mentor | Advice generator app</title>
+  </head>
+  <body>
+    <main class="advice">
+      <h1 class="advice__header">Advice #<span id="advice-id"></span></h1>
+      <p class="advice__text">
+        &ldquo;<span id="generated-advice"
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolore
+          rerum ducimus sed sequi quis? Eaque quibusdam officia assumenda
+          ut</span
+        >&rdquo;
+      </p>
+      <img
+        class="advice__divider"
+        src="images/pattern-divider-desktop.svg"
+        alt="Divider"
+      />
+      <button class="advice__btn">
+        <img src="images/icon-dice.svg" alt="Dice" />
+      </button>
+    </main>
+  </body>
 </html>

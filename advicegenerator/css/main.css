@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: hsl(218deg, 23%, 16%);
+}
+
+.advice {
+  width: 54rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 4.8rem;
+  margin: 30rem auto 0 auto;
+  background-color: hsl(217deg, 19%, 24%);
+  border-radius: 1.5rem;
+  text-align: center;
+  position: relative;
+}
+.advice__header {
+  font-size: 1.3rem;
+  color: hsl(150deg, 100%, 66%);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 2.4rem;
+}
+.advice__text {
+  font-size: 2.8rem;
+  color: hsl(193deg, 38%, 86%);
+  margin-bottom: 4rem;
+}
+.advice__divider {
+  margin: 0 auto 4rem auto;
+}
+.advice__btn {
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background-color: hsl(150deg, 100%, 66%);
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.1s;
+}
+.advice__btn:hover {
+  box-shadow: 0px 0px 40px rgba(83, 255, 169, 0.5450980392);
+  transform: translate(-50%, 45%);
+}
+.advice__btn:active {
+  transform: translate(-50%, 48%);
+}/*# sourceMappingURL=main.css.map */

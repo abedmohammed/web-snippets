@@ -1,5 +1,14 @@
 // COLOURS
 
+// ### Primary
+$light-cyan: hsl(193, 38%, 86%);
+$neon-green: hsl(150, 100%, 66%);
+
+// ### neutral
+$gray-blue: hsl(217, 19%, 38%);
+$dark-gray-blue: hsl(217, 19%, 24%);
+$dark-blue: hsl(218, 23%, 16%);
+
 //RESET
 *,
 *::before,
@@ -31,5 +40,6 @@ select {
 }
 
 body {
-
+  font-family: 'Manrope', sans-serif;
+  background-color: $dark-blue;
 }

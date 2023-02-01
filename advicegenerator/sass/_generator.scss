@@ -1,0 +1,63 @@
+.advice {
+  width: 54rem;
+  height: fit-content;
+  padding: 4.8rem;
+  margin: 30rem auto 0 auto;
+
+  background-color: $dark-gray-blue;
+  border-radius: 1.5rem;
+
+  text-align: center;
+
+  position: relative;
+
+  &__header {
+    font-size: 1.3rem;
+    color: $neon-green;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    margin-bottom: 2.4rem;
+  }
+
+  &__text {
+    font-size: 2.8rem;
+    color: $light-cyan;
+
+    margin-bottom: 4rem;
+  }
+
+  &__divider {
+    margin: 0 auto 4rem auto;
+  }
+
+  &__btn {
+    border: none;
+    cursor: pointer;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+
+    background-color: $neon-green;
+    width: 6.4rem;
+    height: 6.4rem;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.1s;
+
+    &:hover {
+      box-shadow: 0px 0px 40px #53ffa98b;
+      transform: translate(-50%, 45%);
+    }
+
+    &:active {
+      transform: translate(-50%, 48%);
+    }
+  }
+}

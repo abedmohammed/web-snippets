@@ -33,17 +33,32 @@ const getPeople = function () {
 };
 
 // VALIDATORS
+const handleError = function (errorField, message, error = true) {
+  if (error) {
+    errorField.classList.add('form__error--active');
+  } else {
+    ('removed');
+    errorField.classList.remove('form__error--active');
+  }
+  errorField.textContent = message;
+};
+
 const validBill = function () {
+  const errorMsg = document.querySelector('#bill-error');
+
   if (!document.querySelector('.form__input[id="bill"]').checkValidity()) {
     //display error
+    handleError(errorMsg, 'Invalid number');
     return false;
   }
 
   if (getBill() <= 0) {
     //display error
+    handleError(errorMsg, "Can't be 0");
     return false;
   }
 
+  handleError(errorMsg, '', false);
   return true;
 };
 
@@ -64,16 +79,23 @@ const validTip = function () {
 };
 
 const validPeople = function () {
+  const errorMsg = document.querySelector('#people-error');
+
+  if (getPeople() === '') return false;
+
   if (!document.querySelector('.form__input[id="people"]').checkValidity()) {
     //display error
+    handleError(errorMsg, 'Invalid number');
     return false;
   }
 
   if (getPeople() <= 0) {
     //display error
+    handleError(errorMsg, "Can't be 0");
     return false;
   }
 
+  handleError(errorMsg, '', false);
   return true;
 };
 

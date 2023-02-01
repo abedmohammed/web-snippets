@@ -60,6 +60,26 @@
     transform: translateY(-50%);
     left: 1.7rem;
   }
+
+  &__error {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1rem;
+    font-size: 1.6rem;
+    color: $Light-red;
+    opacity: 0;
+    transition: all 0.2s;
+
+    &--active + .form__input {
+      outline: 2px solid $Light-red;
+    }
+
+    &--active {
+      transform: translateY(-225%);
+      opacity: 1;
+    }
+  }
 }
 
 .tip {

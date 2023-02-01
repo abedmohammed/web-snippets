@@ -33,6 +33,7 @@
           <div class="form__group">
             <label for="bill" class="form__label">Bill</label>
             <div class="form__input-container">
+              <p id="bill-error" class="form__error"></p>
               <input
                 placeholder="0"
                 type="number"
@@ -121,14 +122,16 @@
           <div class="form__group">
             <label for="people" class="form__label">Number of People</label>
             <div class="form__input-container">
+              <p id="people-error" class="form__error">asdfasdf</p>
               <input
                 placeholder="0"
                 type="number"
                 step="1"
-                min="1"
+                min="0"
                 class="form__input"
                 id="people"
               />
+
               <img
                 src="images/icon-person.svg"
                 alt="Person icon"

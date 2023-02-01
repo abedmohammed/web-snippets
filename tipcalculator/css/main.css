@@ -13,6 +13,8 @@
 }
 [type=number].tip__custom, [type=number].form__input {
   -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 .tip__custom:focus, .form__input:focus {
   outline: 2px solid #26c0ab;
@@ -104,6 +106,23 @@ body {
   top: 50%;
   transform: translateY(-50%);
   left: 1.7rem;
+}
+.form__error {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+  font-size: 1.6rem;
+  color: #e17052;
+  opacity: 0;
+  transition: all 0.2s;
+}
+.form__error--active + .form__input {
+  outline: 2px solid #e17052;
+}
+.form__error--active {
+  transform: translateY(-225%);
+  opacity: 1;
 }
 
 .tip__grid {

@@ -106,6 +106,7 @@ const calculateTip = function (bill, tipPercent, people) {
 };
 
 reset.addEventListener('click', function () {
+  reset.classList.remove('cheque__reset--enabled');
   formInputs.forEach((input) => {
     input.value = '';
     input.checked = false;
@@ -117,6 +118,8 @@ reset.addEventListener('click', function () {
 // MAIN - ON CHANGE
 formInputs.forEach(function (input) {
   input.addEventListener('change', function () {
+    reset.classList.remove('cheque__reset--enabled');
+
     if (this.classList.contains('tip__checkbox')) {
       document.querySelector('.tip__custom').value = '';
     }
@@ -130,6 +133,7 @@ formInputs.forEach(function (input) {
     if (!validTip()) return;
     if (!validPeople()) return;
 
+    reset.classList.add('cheque__reset--enabled');
     calculateTip(getBill(), getTip(), getPeople());
   });
 });

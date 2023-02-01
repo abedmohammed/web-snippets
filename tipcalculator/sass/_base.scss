@@ -14,7 +14,6 @@ $Very-light-grayish-cyan: #f4fafa;
 $White: #ffffff;
 
 // REUSE
-
 %btn-gray {
   padding: 1.7rem;
   background-color: $Very-light-grayish-cyan;
@@ -44,6 +43,7 @@ $White: #ffffff;
   }
 }
 
+//RESET
 *,
 *::before,
 *::after {
@@ -55,6 +55,14 @@ $White: #ffffff;
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+
+  @media only screen and (max-width: 62.5em) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: 28em) {
+    font-size: 43.75%;
+  }
 }
 
 img,

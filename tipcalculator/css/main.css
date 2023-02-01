@@ -35,6 +35,16 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
+@media only screen and (max-width: 62.5em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 28em) {
+  html {
+    font-size: 43.75%;
+  }
+}
 
 img,
 picture,
@@ -69,6 +79,19 @@ body {
   box-shadow: 5px 5px 30px 5px rgba(0, 0, 0, 0.1);
   display: flex;
 }
+@media only screen and (max-width: 50em) {
+  .calculator {
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    margin: 20rem 10rem 0 10rem;
+  }
+}
+@media only screen and (max-width: 34.5em) {
+  .calculator {
+    margin: 20rem 5rem 0 5rem;
+  }
+}
 .calculator__logo {
   width: 8rem;
   position: absolute;
@@ -97,6 +120,15 @@ body {
   width: 100%;
   height: 4.8rem;
   position: relative;
+}
+.form__input::-moz-placeholder {
+  color: #9ebbbd;
+}
+.form__input:-ms-input-placeholder {
+  color: #9ebbbd;
+}
+.form__input::placeholder {
+  color: #9ebbbd;
 }
 .form__input-container {
   position: relative;
@@ -130,6 +162,11 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 1.6rem;
 }
+@media only screen and (max-width: 34.5em) {
+  .tip__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .tip__option {
   list-style: none;
 }
@@ -161,9 +198,19 @@ body {
   display: block;
   width: 100%;
   height: 100%;
+  text-align: center;
   padding-bottom: 0;
   padding-top: 0;
   font-size: 2rem;
+}
+.tip__custom::-moz-placeholder {
+  color: #5e7a7d;
+}
+.tip__custom:-ms-input-placeholder {
+  color: #5e7a7d;
+}
+.tip__custom::placeholder {
+  color: #5e7a7d;
 }
 
 .cheque {
@@ -193,10 +240,10 @@ body {
   font-size: 1.3rem;
 }
 .cheque__reset {
-  cursor: pointer;
+  pointer-events: none;
   margin-top: auto;
   border: none;
-  background-color: #26c0ab;
+  background-color: #0d686d;
   text-transform: uppercase;
   font-size: 2rem;
   color: #00494d;
@@ -204,6 +251,11 @@ body {
   padding-bottom: 1rem;
   border-radius: 5px;
   transition: all 0.2s;
+}
+.cheque__reset--enabled {
+  pointer-events: all;
+  cursor: pointer;
+  background-color: #26c0ab;
 }
 .cheque__reset:hover {
   transform: translateY(-3px);
@@ -215,4 +267,9 @@ body {
 .cheque__number {
   color: #26c0ab;
   font-size: 4.8rem;
+}
+@media only screen and (max-width: 28em) {
+  .cheque__number {
+    font-size: 4rem;
+  }
 }/*# sourceMappingURL=main.css.map */

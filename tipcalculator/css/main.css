@@ -84,12 +84,12 @@ body {
     flex-direction: column;
     width: auto;
     height: auto;
-    margin: 20rem 10rem 0 10rem;
+    margin: 20rem 10rem 10rem 10rem;
   }
 }
 @media only screen and (max-width: 34.5em) {
   .calculator {
-    margin: 20rem 5rem 0 5rem;
+    margin: 15rem 2.5rem 4rem 2.5rem;
   }
 }
 .calculator__logo {
@@ -99,6 +99,11 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
+@media only screen and (max-width: 34.5em) {
+  .calculator__logo {
+    top: -9rem;
+  }
+}
 
 .form {
   flex: 1;
@@ -106,6 +111,12 @@ body {
 .form__container {
   padding: 1.6rem;
   margin-right: 3.2rem;
+}
+@media only screen and (max-width: 50em) {
+  .form__container {
+    margin-right: 0;
+    margin-bottom: 3.2rem;
+  }
 }
 .form__group:not(:last-child) {
   margin-bottom: 4rem;

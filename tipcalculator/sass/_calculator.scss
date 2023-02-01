@@ -17,11 +17,11 @@
     flex-direction: column;
     width: auto;
     height: auto;
-    margin: 20rem 10rem 0 10rem;
+    margin: 20rem 10rem 10rem 10rem;
   }
 
   @media only screen and (max-width: 34.5em) {
-    margin: 20rem 5rem 0 5rem;
+    margin: 15rem 2.5rem 4rem 2.5rem;
   }
 
   &__logo {
@@ -31,6 +31,10 @@
     top: -12rem;
     left: 50%;
     transform: translateX(-50%);
+
+    @media only screen and (max-width: 34.5em) {
+      top: -9rem;
+    }
   }
 }
 
@@ -40,6 +44,10 @@
   &__container {
     padding: 1.6rem;
     margin-right: 3.2rem;
+    @media only screen and (max-width: 50em) {
+      margin-right: 0;
+      margin-bottom: 3.2rem;
+    }
   }
 
   &__group:not(:last-child) {

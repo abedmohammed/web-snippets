@@ -34,6 +34,7 @@ select {
 
 body {
   height: 100vh;
+  height: 100dvh;
   font-family: "Manrope", sans-serif;
   background-color: hsl(218deg, 23%, 16%);
   display: flex;

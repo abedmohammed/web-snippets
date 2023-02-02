@@ -18,20 +18,32 @@ const displayLoader = function (display = true) {
   }
 };
 
-const displayAdvice = function (slipObj) {
-  const { id: adviceID, advice: advice } = slipObj;
+// const displayAdvice = function (slipObj) {
+//   const { id: adviceID, advice: advice } = slipObj;
+//   displayLoader(false);
+//   adviceIDText.textContent = adviceID;
+//   adviceText.textContent = advice;
+// };
+
+// const getAdvice = function () {
+//   displayLoader();
+//   fetch('https://api.adviceslip.com/advice')
+//     .then((res) => res.json())
+//     .then((res) => displayAdvice(res.slip));
+// };
+
+const generateAdvice = async function () {
+  displayLoader();
+
+  let response = await fetch('https://api.adviceslip.com/advice');
+  response = await response.json();
+  const { id: adviceID, advice: advice } = response.slip;
+
   displayLoader(false);
   adviceIDText.textContent = adviceID;
   adviceText.textContent = advice;
 };
 
-const getAdvice = function () {
-  displayLoader();
-  fetch('https://api.adviceslip.com/advice')
-    .then((res) => res.json())
-    .then((res) => displayAdvice(res.slip));
-};
-
 generateBtn.addEventListener('click', function () {
-  getAdvice();
+  generateAdvice();
 });

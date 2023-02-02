@@ -20,6 +20,21 @@
     margin-bottom: 2.4rem;
   }
 
+  &__loader {
+    border: 0.4rem solid $dark-blue;
+    border-top: 0.5rem solid $gray-blue;
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    animation: spin 0.5s cubic-bezier(0.7, 0.29, 0.2, 0.83) infinite;
+
+    margin: 4.4rem auto 4.8rem auto;
+
+    & + .advice__text {
+      display: none;
+    }
+  }
+
   &__text {
     font-size: 2.8rem;
     color: $light-cyan;

@@ -42,6 +42,23 @@ body {
   align-items: center;
 }
 
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .advice {
   max-width: 54rem;
   padding: 4.8rem;
@@ -57,6 +74,19 @@ body {
   letter-spacing: 4px;
   text-transform: uppercase;
   margin-bottom: 2.4rem;
+}
+.advice__loader {
+  border: 0.4rem solid hsl(218deg, 23%, 16%);
+  border-top: 0.5rem solid hsl(217deg, 19%, 38%);
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  -webkit-animation: spin 0.5s cubic-bezier(0.7, 0.29, 0.2, 0.83) infinite;
+          animation: spin 0.5s cubic-bezier(0.7, 0.29, 0.2, 0.83) infinite;
+  margin: 4.4rem auto 4.8rem auto;
+}
+.advice__loader + .advice__text {
+  display: none;
 }
 .advice__text {
   font-size: 2.8rem;

@@ -21,6 +21,10 @@ $dark-blue: hsl(218, 23%, 16%);
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+
+  @media only screen and (max-width: 34em) {
+    font-size: 50%;
+  }
 }
 
 img,
@@ -40,6 +44,11 @@ select {
 }
 
 body {
+  height: 100vh;
   font-family: 'Manrope', sans-serif;
   background-color: $dark-blue;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

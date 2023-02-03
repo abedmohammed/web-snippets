@@ -141,4 +141,11 @@ export const snippets = [
     tags: ['html', 'sass', 'javascript'],
     date: 'january 28, 2023',
   },
+  {
+    name: 'Advice Generator',
+    link: 'advicegenerator',
+    size: 'tiny',
+    tags: ['html', 'sass', 'javascript', 'api'],
+    date: 'february, 2023',
+  },
 ];

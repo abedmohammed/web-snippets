@@ -92,6 +92,10 @@ body {
     margin: 15rem 2.5rem 4rem 2.5rem;
   }
 }
+.calculator__heading {
+  position: absolute;
+  visibility: hidden;
+}
 .calculator__logo {
   width: 8rem;
   position: absolute;
@@ -168,6 +172,9 @@ body {
   opacity: 1;
 }
 
+.tip {
+  border: none;
+}
 .tip__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

@@ -24,6 +24,11 @@
     margin: 15rem 2.5rem 4rem 2.5rem;
   }
 
+  &__heading {
+    position: absolute;
+    visibility: hidden;
+  }
+
   &__logo {
     width: 8rem;
 
@@ -106,6 +111,8 @@
 }
 
 .tip {
+  border: none;
+
   &__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -121,6 +128,7 @@
   }
 
   &__checkbox {
+    // appearance: none;
     position: absolute;
     left: -999999%;
 

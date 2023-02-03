@@ -26,13 +26,23 @@
   </head>
   <body>
     <main class="calculator">
-      <img src="images/logo.svg" alt="Splitter logo" class="calculator__logo" />
-      <form action="#" class="form">
+      <h1 class="calculator__heading">
+        Splitter - Bill Tax Calculator and Price Splitter for Groups
+      </h1>
+      <img
+        src="images/logo.svg"
+        alt="Splitter"
+        title="Splitter"
+        class="calculator__logo"
+      />
+      <form class="form">
         <div class="form__container">
           <div class="form__group">
-            <label for="bill" class="form__label">Bill</label>
+            <label for="bill" class="form__label" aria-describedby="bill-error"
+              >Bill</label
+            >
             <div class="form__input-container">
-              <p id="bill-error" class="form__error"></p>
+              <p id="bill-error" class="form__error" aria-live="assertive"></p>
               <input
                 placeholder="0"
                 type="number"
@@ -42,18 +52,14 @@
                 id="bill"
               />
 
-              <img
-                src="images/icon-dollar.svg"
-                alt="Dollar sign"
-                class="form__icon"
-              />
+              <img src="images/icon-dollar.svg" class="form__icon" />
             </div>
           </div>
 
           <div class="form__group">
-            <ul class="tip">
-              <label class="form__label">Select Tip %</label>
-              <div class="tip__grid">
+            <fieldset class="tip">
+              <legend class="form__label">Select Tip %</legend>
+              <ul class="tip__grid">
                 <li class="tip__option">
                   <input
                     name="tipAmount"
@@ -114,14 +120,23 @@
                     id="box-custom"
                   />
                 </li>
-              </div>
-            </ul>
+              </ul>
+            </fieldset>
           </div>
 
           <div class="form__group">
-            <label for="people" class="form__label">Group Size</label>
+            <label
+              for="people"
+              class="form__label"
+              aria-describedby="people-error"
+              >Group Size</label
+            >
             <div class="form__input-container">
-              <p id="people-error" class="form__error"></p>
+              <p
+                id="people-error"
+                class="form__error"
+                aria-live="assertive"
+              ></p>
               <input
                 placeholder="0"
                 type="number"
@@ -131,11 +146,7 @@
                 id="people"
               />
 
-              <img
-                src="images/icon-person.svg"
-                alt="Person icon"
-                class="form__icon"
-              />
+              <img src="images/icon-person.svg" class="form__icon" />
             </div>
           </div>
         </div>
@@ -147,14 +158,14 @@
               <p class="cheque__title">Tip Amount</p>
               <p class="cheque__subtitle">/ person</p>
             </div>
-            <div id="amount" class="cheque__number">$0.00</div>
+            <p id="amount" class="cheque__number" aria-live="polite">$0.00</p>
           </div>
           <div class="cheque__total">
             <div class="cheque__text">
               <p class="cheque__title">Total</p>
               <p class="cheque__subtitle">/ person</p>
             </div>
-            <div id="total" class="cheque__number">$0.00</div>
+            <p id="total" class="cheque__number" aria-live="polite">$0.00</p>
           </div>
           <button class="cheque__reset">Reset</button>
         </div>

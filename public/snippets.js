@@ -5,6 +5,8 @@ export const snippets = [
     link: 'productcard',
     size: 'small',
     tags: ['html', 'css'],
+    mobile: true,
+    order: 0,
     date: 'July 20, 2022',
   },
   {
@@ -12,6 +14,8 @@ export const snippets = [
     link: 'qrcard',
     size: 'medium',
     tags: ['html', 'css'],
+    mobile: true,
+    order: 1,
     date: 'July 27, 2022',
   },
   {
@@ -19,6 +23,8 @@ export const snippets = [
     link: 'nftcard',
     size: 'tiny',
     tags: ['html', 'css'],
+    mobile: true,
+    order: 2,
     date: 'July 29, 2022',
   },
   {
@@ -26,6 +32,8 @@ export const snippets = [
     link: 'ordersummarycard',
     size: 'tiny',
     tags: ['html', 'css'],
+    mobile: true,
+    order: 3,
     date: 'August 2, 2022',
   },
   {
@@ -33,6 +41,8 @@ export const snippets = [
     link: 'threecolumnpreview',
     size: 'tiny',
     tags: ['html', 'css'],
+    mobile: true,
+    order: 4,
     date: 'August 5, 2022',
   },
   {
@@ -40,6 +50,8 @@ export const snippets = [
     link: 'statspreview',
     size: 'medium',
     tags: ['html', 'css'],
+    mobile: true,
+    order: 5,
     date: 'August 5, 2022',
   },
   {
@@ -47,6 +59,8 @@ export const snippets = [
     link: 'profilecard',
     size: 'tiny',
     tags: ['html', 'css'],
+    mobile: true,
+    order: 6,
     date: 'August 9, 2022',
   },
   {
@@ -54,6 +68,8 @@ export const snippets = [
     link: 'testimonialsgrid',
     size: 'big',
     tags: ['html', 'css'],
+    mobile: true,
+    order: 7,
     date: 'August 10, 2022',
   },
   {
@@ -61,6 +77,8 @@ export const snippets = [
     link: 'socialproof',
     size: 'full',
     tags: ['html', 'css'],
+    mobile: true,
+    order: 8,
     date: 'August 11, 2022',
   },
   {
@@ -68,6 +86,8 @@ export const snippets = [
     link: 'chatapp',
     size: 'big',
     tags: ['html', 'css'],
+    mobile: true,
+    order: 9,
     date: 'August 30, 2022',
   },
   {
@@ -75,6 +95,8 @@ export const snippets = [
     link: 'fylodatastorage',
     size: 'tiny',
     tags: ['html', 'css'],
+    mobile: true,
+    order: 10,
     date: 'October 15, 2022',
   },
   {
@@ -82,6 +104,8 @@ export const snippets = [
     link: 'ratingcomponent',
     size: 'tiny',
     tags: ['html', 'css', 'javascript'],
+    mobile: true,
+    order: 11,
     date: 'October 19, 2022',
   },
   {
@@ -89,6 +113,8 @@ export const snippets = [
     link: 'faqaccordioncard',
     size: 'medium',
     tags: ['html', 'css', 'javascript'],
+    mobile: true,
+    order: 12,
     date: 'October 28, 2022',
   },
   {
@@ -96,6 +122,8 @@ export const snippets = [
     link: 'omnifood',
     size: 'full',
     tags: ['html', 'css'],
+    mobile: true,
+    order: 13,
     date: 'November, 2022',
   },
   {
@@ -103,6 +131,8 @@ export const snippets = [
     link: 'natours',
     size: 'full',
     tags: ['html', 'sass'],
+    mobile: true,
+    order: 14,
     date: 'December, 2022',
   },
   {
@@ -110,6 +140,8 @@ export const snippets = [
     link: 'trillo',
     size: 'full',
     tags: ['html', 'sass'],
+    mobile: true,
+    order: 15,
     date: 'January, 2023',
   },
   {
@@ -117,6 +149,8 @@ export const snippets = [
     link: 'nexter',
     size: 'full',
     tags: ['html', 'sass'],
+    mobile: true,
+    order: 16,
     date: 'January, 2023',
   },
   {
@@ -124,6 +158,8 @@ export const snippets = [
     link: 'mapty',
     size: 'big',
     tags: ['html', 'css', 'javascript'],
+    mobile: false,
+    order: 17,
     date: 'november 30, 2022',
   },
   {
@@ -132,13 +168,17 @@ export const snippets = [
     link: 'foodbase',
     size: 'full',
     tags: ['html', 'css', 'javascript', 'api'],
-    date: 'december, 2022', 
+    mobile: false,
+    order: 18,
+    date: 'december, 2022',
   },
   {
     name: 'Tip Calculator',
     link: 'tipcalculator',
     size: 'medium',
     tags: ['html', 'sass', 'javascript'],
+    mobile: true,
+    order: 19,
     date: 'january 28, 2023',
   },
   {
@@ -146,6 +186,8 @@ export const snippets = [
     link: 'advicegenerator',
     size: 'tiny',
     tags: ['html', 'sass', 'javascript', 'api'],
+    mobile: true,
+    order: 20,
     date: 'february, 2023',
   },
 ];

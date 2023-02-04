@@ -141,6 +141,8 @@
 /* COVER TAGS */
 .content__tags {
   display: flex;
+  flex-wrap: wrap;
+  width: 40rem;
   gap: 1rem;
 }
 

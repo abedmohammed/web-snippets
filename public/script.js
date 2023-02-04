@@ -55,9 +55,12 @@ const generateCard = function (data) {
 const populateCards = function () {
   const container = document.querySelector('.card-container');
 
-  snippets.sort((b, a) => Date.parse(a.date) - Date.parse(b.date));
+  // snippets.sort((b, a) => Date.parse(a.date) - Date.parse(b.date));
+  snippets.sort((b, a) => a.order - b.order);
 
   snippets.forEach((snippet) => {
+    if (window.innerWidth < 768 && snippet.mobile === false) return;
+
     const html = generateCard(snippet);
     container.insertAdjacentHTML('beforeend', html);
   });

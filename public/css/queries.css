@@ -50,6 +50,10 @@
     padding: 3rem;
   }
 
+  .content__tags {
+    width: 35rem;
+  }
+
   .profile__prof-pic {
     flex-basis: 30%;
     height: 30%;

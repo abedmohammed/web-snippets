@@ -1,0 +1,12 @@
+.background {
+  background-image: var(--img-background-banner);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.container {
+  width: 54rem;
+
+  margin: 0 auto 0 auto;
+  padding: 7rem 0 5rem 0;
+}

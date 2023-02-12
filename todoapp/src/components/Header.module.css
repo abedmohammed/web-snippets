@@ -1,0 +1,28 @@
+.header {
+  height: 4.8rem;
+  margin-bottom: 4rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--color-white);
+  letter-spacing: 1.5rem;
+}
+
+.header__theme-switcher {
+  cursor: pointer;
+
+  background-image: var(--img-theme-switch);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border: none;
+  background-color: transparent;
+  width: 4.8rem;
+  height: 100%;
+}

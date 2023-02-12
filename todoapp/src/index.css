@@ -1,0 +1,48 @@
+:root {
+  --color-background: #fafafa;
+  --color-white: #fff;
+
+  --img-background-banner: url(./assets/images/bg-desktop-light.jpg);
+  --img-theme-switch: url(./assets/images/icon-moon.svg);
+}
+
+html[data-theme='dark'] {
+  --color-background: #171823;
+
+  --img-background-banner: url(./assets/images/bg-desktop-dark.jpg);
+  --img-theme-switch: url(./assets/images/icon-sun.svg);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  background-color: var(--color-background);
+  font-family: 'Josefin Sans', sans-serif;
+}

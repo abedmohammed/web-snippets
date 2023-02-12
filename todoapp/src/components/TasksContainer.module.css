@@ -1,0 +1,7 @@
+.tasks-container {
+  display: block;
+  height: 44rem;
+  background-color: purple;
+
+  margin-bottom: 5rem;
+}

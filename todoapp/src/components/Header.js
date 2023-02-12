@@ -14,11 +14,7 @@ export default function Header() {
 
   const themeHandler = () => {
     const currentTheme = document.documentElement.getAttribute('data-theme');
-    let targetTheme = 'light';
-
-    if (currentTheme === 'light') {
-      targetTheme = 'dark';
-    }
+    const targetTheme = currentTheme === 'light' ? 'dark' : 'light';
 
     document.documentElement.setAttribute('data-theme', targetTheme);
     localStorage.setItem('theme', targetTheme);

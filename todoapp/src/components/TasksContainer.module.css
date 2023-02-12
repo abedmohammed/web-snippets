@@ -1,7 +1,16 @@
 .tasks-container {
   display: block;
-  height: 44rem;
-  background-color: purple;
-
+  border-radius: var(--border-radius);
+  overflow: hidden;
   margin-bottom: 5rem;
+  box-shadow: var(--box-shadow);
+}
+
+.tasks-container > *:not(:last-child) {
+  border-bottom: 1px solid var(--color-circle);
+}
+
+.menu {
+  height: 5rem;
+  background-color: var(--color-solid);
 }

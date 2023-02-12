@@ -1,6 +1,27 @@
 .create {
-  height: 6.4rem;
-  background-color: aqua;
-
   margin-bottom: 2.4rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.create__input {
+  font-size: 1.8rem;
+
+  font-weight: 400;
+  color: var(--color-text);
+
+  background-color: transparent;
+
+  border: none;
+
+  flex: 1;
+  height: 100%;
+}
+
+.create__input::placeholder {
+  color: var(--color-placeholder);
+}
+
+.create__input:focus {
+  outline: none;
 }

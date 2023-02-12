@@ -1,0 +1,18 @@
+.task {
+  cursor: pointer;
+}
+
+.task:hover .task__close {
+  opacity: 1;
+}
+
+.task__close {
+  opacity: 0;
+  margin-left: auto;
+  margin-right: 2.4rem;
+  transition: all 0.2s;
+}
+
+.task__close:hover {
+  transform: scale(1.2);
+}

@@ -10,7 +10,7 @@
 .header__title {
   font-size: 4rem;
   font-weight: 700;
-  color: var(--color-white);
+  color: #fff;
   letter-spacing: 1.5rem;
 }
 

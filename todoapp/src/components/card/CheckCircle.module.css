@@ -24,5 +24,6 @@
   background: url(../../assets/images/icon-check.svg),
     var(--color-gradient) border-box;
   background-position: center;
+  background-size: 1.4rem, auto;
   background-repeat: no-repeat;
 }

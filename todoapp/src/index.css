@@ -4,11 +4,13 @@
     hsl(192, 100%, 67%),
     hsl(280, 87%, 65%)
   );
+  --color-blue: #3a7cfd;
 
   --color-background: #fafafa;
   --color-solid: #fff;
   --color-placeholder: #9495a5;
   --color-text: #494c6b;
+  --color-text-completed: #d1d2da;
 
   --color-circle: #e3e4f1;
 
@@ -24,6 +26,7 @@ html[data-theme='dark'] {
   --color-solid: #25273d;
   --color-placeholder: #767992;
   --color-text: #c8cbe7;
+  --color-text-completed: #4d5067;
 
   --color-circle: #393a4b;
 

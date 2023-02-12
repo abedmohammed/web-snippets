@@ -16,3 +16,8 @@
 .task__close:hover {
   transform: scale(1.2);
 }
+
+.task__completed {
+  color: var(--color-text-completed);
+  text-decoration: line-through;
+}

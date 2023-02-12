@@ -7,6 +7,7 @@ export default function Card(props) {
   return (
     <div className={`${styles.card} ${props.className}`}>
       <CheckCircle
+        onClickCircle={props.onClickCircle}
         isClicked={props.isClicked}
         isClickable={props.isClickable}
       />

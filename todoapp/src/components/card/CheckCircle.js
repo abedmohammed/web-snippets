@@ -4,7 +4,7 @@ import styles from './CheckCircle.module.css';
 
 export default function CheckCircle(props) {
   const circleCheckHandler = () => {
-    console.log('clicked');
+    props.onClickCircle();
   };
 
   const displayClasses = () => {

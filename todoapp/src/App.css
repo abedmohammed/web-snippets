@@ -5,8 +5,8 @@
 }
 
 .container {
-  width: 54rem;
+  max-width: calc(54rem + 10rem);
 
   margin: 0 auto 0 auto;
-  padding: 7rem 0 5rem 0;
+  padding: 7rem 2.4rem 5rem 2.4rem;
 }

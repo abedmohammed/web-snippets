@@ -33,7 +33,9 @@ function App() {
   };
 
   return (
+    <>
     <div className="background">
+    </div>
       <div className="container">
         <Header></Header>
         <CreateTask onCreate={createTaskHandler}></CreateTask>
@@ -42,7 +44,7 @@ function App() {
           onDelete={removeTaskHandler}
           tasksList={tasksData}></TasksContainer>
       </div>
-    </div>
+    </>
   );
 }
 

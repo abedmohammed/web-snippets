@@ -1,7 +1,13 @@
 .background {
   background-image: var(--img-background-banner);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 75em) {
+  .background {
+    background-size: contain;
+  }
 }
 
 .container {

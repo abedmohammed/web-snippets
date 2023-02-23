@@ -175,6 +175,12 @@
 .tags--react {
   background-color: var(--blue);
 }
+.tags--course {
+  background-color: var(--orange);
+}
+.tags--challenge {
+  background-color: var(--orange);
+}
 
 /* COVER WEBSITE LINKS */
 .cover__links {

@@ -189,15 +189,5 @@ export const snippets = [
     mobile: true,
     order: 20,
     date: 'february 1, 2023',
-  },
-  {
-    name: 'React Todo App',
-    externalLink: 'https://mohammedstodo.netlify.app',
-    link: 'todoapp',
-    size: 'full',
-    tags: ['react', 'css', 'javascript'],
-    mobile: true,
-    order: 21,
-    date: 'february 8, 2023',
-  },
+  }
 ];

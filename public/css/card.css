@@ -175,6 +175,9 @@
 .tags--react {
   background-color: var(--blue);
 }
+.tags--firebase {
+  background-color: var(--fire-red);
+}
 .tags--course {
   background-color: var(--orange);
 }

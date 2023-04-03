@@ -10,7 +10,7 @@ const generateCard = function (data) {
     <article class="card">
       <a class="card__link" href="${
         data.externalLink ? data.externalLink : data.link
-      }/"></a>
+      }"></a>
       <img
         class="card__image image-${data.size}"
         src="${data.link}/final.webp"

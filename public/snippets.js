@@ -192,7 +192,7 @@ export const snippets = [
   },
   {
     name: 'Web Dictionary',
-    externalLink: 'https://abedsdictionary.netlify.app/',
+    externalLink: 'https://abedsdictionary.netlify.app',
     link: 'dictionary-web-app',
     size: 'full',
     tags: ['html', 'sass', 'javascript', 'api', 'challenge'],

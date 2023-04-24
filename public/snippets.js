@@ -164,7 +164,7 @@ export const snippets = [
   },
   {
     name: 'Food Base',
-    externalLink: 'https://foodbase.netlify.app/',
+    externalLink: 'https://foodbase.netlify.app',
     link: 'foodbase',
     size: 'full',
     tags: ['html', 'css', 'javascript', 'api', 'course'],
@@ -202,7 +202,7 @@ export const snippets = [
   },
   {
     name: 'React Countries',
-    externalLink: 'https://abedscountries.netlify.app/',
+    externalLink: 'https://abedscountries.netlify.app',
     link: 'react-countries',
     size: 'full',
     tags: ['react', 'sass', 'challenge'],
@@ -212,12 +212,22 @@ export const snippets = [
   },
   {
     name: 'WindowsXP Messenger',
-    externalLink: 'https://xpmessenger.com/',
+    externalLink: 'https://xpmessenger.com',
     link: 'windows-xp-messenger',
     size: 'full',
     tags: ['react', 'sass', 'firebase'],
     mobile: true,
     order: 23,
     date: 'march 16, 2023',
+  },
+  {
+    name: 'F1 Scoreboard',
+    externalLink: 'https://f1scoreboard.com',
+    link: 'f1scoreboard',
+    size: 'full',
+    tags: ['react', 'sass', 'api'],
+    mobile: true,
+    order: 24,
+    date: 'April 24, 2023',
   }
 ];

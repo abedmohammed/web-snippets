@@ -229,5 +229,25 @@ export const snippets = [
     mobile: true,
     order: 24,
     date: 'April 24, 2023',
+  },
+  {
+    name: 'Portfolio',
+    externalLink: 'https://abedm.dev',
+    link: 'portfolio',
+    size: 'full',
+    tags: ['react', 'nextjs', 'sass'],
+    mobile: true,
+    order: 25,
+    date: 'June 1, 2023',
+  },
+  {
+    name: 'Snapwitter',
+    externalLink: 'https://snapwitter.com',
+    link: 'snapwitter',
+    size: 'full',
+    tags: ['react', 'typescript', 'nextjs', 'mongodb', 'tailwind', 'prisma'],
+    mobile: true,
+    order: 26,
+    date: 'July 1, 2023',
   }
 ];

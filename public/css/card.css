@@ -184,6 +184,21 @@
 .tags--challenge {
   background-color: var(--orange);
 }
+.tags--nextjs {
+  background-color: var(--black);
+}
+.tags--prisma {
+  background-color: var(--dark-blue);
+}
+.tags--mongodb {
+  background-color: var(--green);
+}
+.tags--tailwind {
+  background-color: var(--blue);
+}
+.tags--typescript {
+  background-color: var(--blue);
+}
 
 /* COVER WEBSITE LINKS */
 .cover__links {
